@@ -3,3 +3,5 @@ config/
 *.jpeg
 *.gif
 *.png
+rss.xml
+
