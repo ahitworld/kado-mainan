@@ -1,0 +1,42 @@
+/*
+=======================================================================
+	column 1 Rules
+=======================================================================
+*/
+.col1 {
+	float:right;
+	width:680px;
+	background-image:url(../images/top_bg.gif);
+	background-repeat:no-repeat;
+	background-position:top right;
+	padding-top: 215px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+/*
+=======================================================================
+	Column 2 Rules
+=======================================================================
+*/
+.col2 {
+	width:220px;
+	float:left;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+/*
+=======================================================================
+	Banner Rules contentslider.css
+=======================================================================
+*/
+.rotating_banner {
+	float:right;
+}
+.rotating_banner .anythingSlider .wrapper {
+   left: -10px;
+}

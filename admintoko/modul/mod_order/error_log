@@ -1,0 +1,5 @@
+[27-Dec-2013 17:20:45] PHP Notice:  Use of undefined constant module - assumed 'module' in /home/belibaju/public_html/web/saharabutik.2/admintoko/modul/mod_order/aksi_order.php on line 6
+[27-Dec-2013 17:20:45] PHP Notice:  Use of undefined constant act - assumed 'act' in /home/belibaju/public_html/web/saharabutik.2/admintoko/modul/mod_order/aksi_order.php on line 7
+[27-Dec-2013 17:24:56] PHP Notice:  Use of undefined constant module - assumed 'module' in /home/belibaju/public_html/web/saharabutik.2/admintoko/modul/mod_order/aksi_order.php on line 6
+[27-Dec-2013 17:24:56] PHP Notice:  Use of undefined constant act - assumed 'act' in /home/belibaju/public_html/web/saharabutik.2/admintoko/modul/mod_order/aksi_order.php on line 7
+[28-Dec-2013 02:29:17] PHP Notice:  Use of undefined constant cek - assumed 'cek' in /home/belibaju/public_html/web/saharabutik.2/admintoko/modul/mod_order/aksi_alldel.php on line 6

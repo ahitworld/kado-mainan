@@ -1,0 +1,38 @@
+.prod_box_scroll {
+   width: 180px;
+   padding: 0px 0px 5px 10px;
+}
+.prod_box {
+   width: 180px;
+   padding: 0px 0px 20px 30px;
+}
+.center_prod_box {
+   width: 180px;
+   height: 230px;
+   background: url(../images/product_box_center_big.gif) repeat-y;
+}
+.prod_details_tab {
+   width: 180px;
+   height: 34px;
+   background: url(../images/products_details_bg_big.gif) no-repeat center;
+}
+
+a.prod_details {
+   padding-right: 35px;
+}
+a.prod_cart {
+   padding: 0 0 0 30px;
+}
+
+.simply-scroll {
+   height: 270px !important;
+}
+.simply-scroll-clip {
+   height: 260px !important;
+}
+.simply-scroll-btn-left {
+   bottom: 135px !important;
+}
+.simply-scroll-btn-right {
+   bottom: 135px !important;
+}
