@@ -12,7 +12,7 @@
       <li><a href='?module=carapengiriman'><b>Edit Cara Pengiriman</b></a></li>
       <li><a href='?module=bank'><b>Edit Rekening Bank</b></a></li>
       <li><a href='?module=kontak'><b>Edit Kontak Toko</b></a></li>
-      <li><a href='?module=download'><b>Edit Download Katalog</b></a></li>
+      <!-- <li><a href='?module=download'><b>Edit Download Katalog</b></a></li> -->
 	</ul>
 </li>
 

@@ -14,9 +14,9 @@
       <li><a href='?module=produk'><b>Kelola Produk</b></a></li>
       <li><a href='?module=kategori'><b>Kelola Kategori Produk</b></a></li>
       <li><a href='?module=order'><b>Lihat Order Masuk &nbsp;<?=$notiforder?></b></a></li>
-      <li><a href='?module=laporan'><b>Lihat Laporan Transaksi</b></a></li>
-      <li><a href='?module=jasakirim'><b>Edit Jasa Pengiriman</b></a></li>
-      <li><a href='?module=ongkoskirim'><b>Edit Ongkos Kirim</b></a></li>
+      <!-- <li><a href='?module=laporan'><b>Lihat Laporan Transaksi</b></a></li> -->
+      <!-- <li><a href='?module=jasakirim'><b>Edit Jasa Pengiriman</b></a></li> -->
+      <!-- <li><a href='?module=ongkoskirim'><b>Edit Ongkos Kirim</b></a></li> -->
       <li><a href='?module=testimoni'><b>Lihat Testimonial &nbsp;<?=$notiftesti?></b></a></li>
 	</ul>
 </li>
