@@ -415,37 +415,60 @@ if($w_facebook=="Y")
                <?php
             	   if(!empty($setting_fb))
             	   {
-            	      ?>
-            	         <li class="fb"><span class="bold"><a href="http://<?=$setting_fburl?>" target="_blank"><?=$setting_fb?></a></li>
-            	      <?php
+            	      echo "<li class='fb'><span class='bold'><a href='http://$setting_fburl' target='_blank'>$setting_fb</a></li>";
             	   }
-            	?>
-            	<?php
-            	   if(!empty($setting_nohp1))
+
+            	   if(!empty($setting_nohp1) && $setting_nohp1_tampil!="")
             	   {
-            	      ?>
-            	         <li class="tel"><span class="bold"><?=$setting_nohp1?> (SMS Only)</li>
-            	      <?php
+            	      echo "<li class='tel'><span class='bold'>$setting_nohp1</li>";
             	   }
-            	?>
-            	<?php
-            	   if(!empty($setting_nohp2))
+
+            	   if(!empty($setting_nohp2) && $setting_nohp2_tampil!="")
             	   {
-            	      ?>
-            	         <li class="tel"><span class="bold"><?=$setting_nohp2?> (SMS Only)</li>
-            	      <?php
+            	      echo "<li class='tel'><span class='bold'>$setting_nohp2</li>";
             	   }
-            	?>
-            	<?php
-            	   if(!empty($setting_pinbb))
+
+            	   if(!empty($setting_pinbb) && $setting_pinbb_tampil!="")
             	   {
-            	      ?>
-            	         <li class="bb"><span class="bold">PIN BB: <?=$setting_pinbb?></li>
-            	      <?php
+            	      echo "<li class='bb'><span class='bold'>PIN BB: $setting_pinbb</li>";
             	   }
-            	?>
-            	 <li class="ym"><span class="bold"><a href="ymsgr:sendim?saharabutik@ymail.com">saharabutik@ymail.com</a></li>
-                <li class="email"><span class="bold"><a href="mailto:<?=$setting_email?>"><?=$setting_email?></a></li>
+
+                 if(!empty($setting_pinbb2) && $setting_pinbb2_tampil!="")
+                 {
+                    echo "<li class='bb'><span class='bold'>PIN BB: $setting_pinbb2</li>";
+                 }
+
+                 if(!empty($setting_ym1) && $setting_ym1_tampil!="")
+                 {
+                    echo "<li class='ym'><span class='bold'><a href='ymsgr:sendim?$setting_ym1'>$setting_ym1</a></li>";
+                 }
+
+                 // if(!empty($setting_ym2) && $setting_ym2_tampil!="")
+                 // {
+                 //    echo "<li class='ym'><span class='bold'><a href='ymsgr:sendim?$setting_ym2'>$setting_ym2</a></li>";
+                 // }
+
+                 // if(!empty($setting_wa) && $setting_wa_tampil!="")
+                 // {
+                 //    echo "<li class='whatsapp'><span class='bold'>WhatsApp: $setting_wa</li>";
+                 // }
+
+                 // if(!empty($setting_wechat) && $setting_wechat_tampil!="")
+                 // {
+                 //    echo "<li class='wechat'><span class='bold'>WeChat: $setting_wechat</li>";
+                 // }
+
+                 // if(!empty($setting_kakao) && $setting_kakao_tampil!="")
+                 // {
+                 //    echo "<li class='kakao'><span class='bold'>Kakao Talk: $setting_kakao</li>";
+                 // }
+
+                 // if(!empty($setting_line) && $setting_line_tampil!="")
+                 // {
+                 //    echo "<li class='line'><span class='bold'>Line: $setting_line</li>";
+                 // }
+              ?>
+              <li class="email"><span class="bold"><a href="mailto:<?=$setting_email?>"><?=$setting_email?></a></li>
             </ul>
             <br>
             <div align="left">
