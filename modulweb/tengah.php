@@ -256,7 +256,8 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    // $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=420]\">BELI</a>";
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;

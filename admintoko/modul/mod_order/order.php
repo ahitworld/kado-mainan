@@ -128,7 +128,7 @@ echo "<tr><td colspan=3 align=right>Total : </td><td>Rp. <b>$total_rp</b></td></
 	case "kiriminvoice":        
     $sqldari = mysql_query("SELECT * FROM setting WHERE tipe='namasitus'");
     $rdari = mysql_fetch_array($sqldari);
-    echo "<h2>Kirim Faktur Pembelian</h2>
+    echo "<h2>Kirim Faktur Pembelian & Pengiriman Barang</h2>
           <form method=POST action='?module=order&act=kirimemail'>
           <table>
           <tr><td>Kepada</td><td> : <input type=text name='email' size=30 value='$r[email]'></td></tr>
