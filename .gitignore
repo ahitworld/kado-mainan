@@ -1,7 +1,11 @@
 config/
 *.jpg
+*.JPG
 *.jpeg
+*.JPEG
 *.gif
+*.GIF
 *.png
+*.PNG
 rss.xml
 
