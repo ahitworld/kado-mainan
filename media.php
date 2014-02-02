@@ -219,6 +219,7 @@
 <!--========== TANGGALAN ==========-->
       <div class="rightnavi">
           <div class="clear">
+            <br><br>
           <ul>
           <SCRIPT language=JavaScript src="js/tanggalan.js"></SCRIPT> 
           <!-- 

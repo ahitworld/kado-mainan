@@ -24,7 +24,7 @@ switch($_GET[act]){
       echo "<b>Aktifkan Slider?</b> : <input type=radio name='aktif' value='Y'>Y  
                                       <input type=radio name='aktif' value='N' checked>N &nbsp;&nbsp;&nbsp;<input type=submit class=tombol value=Simpan>";
     }
-    echo "</form><input type=button  class=tombol value='Tambahkan Header' onclick=location.href='?module=header&act=tambahheader'>
+    echo "</form><input type=button  class=tombol value='Tambahkan Slider' onclick=location.href='?module=header&act=tambahheader'>
           <table>
           <tr><th>No</th><th>Judul</th><th>Tgl. Posting</th><th>Aksi</th></tr>";
     $tampil=mysql_query("SELECT * FROM header ORDER BY id_header DESC");
@@ -47,7 +47,7 @@ switch($_GET[act]){
           <form method=POST action='$aksi?module=header&act=input' enctype='multipart/form-data'>
           <table>
           <tr><td>Judul</td><td>  : <input type=text name='judul' size=30></td></tr>
-          <tr><td>Gambar</td><td> : <input type=file name='fupload' size=40></td></tr>
+          <tr><td>Gambar</td><td> : <input type=file name='fupload' size=40> <br>Ukuran gambar harus 960px X 210px</td></tr>
           <tr><td colspan=2><input type=submit class=tombol value=Simpan>
                             <input type=button class=tombol value=Batal onclick=self.history.back()></td></tr>
           </table></form><br><br><br>";

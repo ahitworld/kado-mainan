@@ -21,13 +21,13 @@
       }
    ?>
    <ul>
-   <li><a href='semua-produk.html#read'> LIHAT SEMUA PRODUK <?=$jmlsemua?></a></li>
+   <li><a href='semua-produk.html#read'> Lihat Semua Produk <?=$jmlsemua?></a></li>
    <?php
    if($w_kategorispesial==="Y")
    {
       $featured = mysql_query("SELECT * FROM setting WHERE tipe='featured'");
       $rfeatured=mysql_fetch_array($featured);
-      echo "<li><a href='featured.html#read'> $rfeatured[value1] $jmlfeatured</a></li>";
+      echo "<li><a href='featured.html#read'> ".ucwords(strtolower($rfeatured[value1]))." $jmlfeatured</a></li>";
    }
    if($w_kategorionsale==="Y")
    {
@@ -44,12 +44,12 @@
       $jmlcat="";
       if($setting_countcat=="Y") { $jmlcat = "<small>($k[jml])</small>"; }
    }
-   echo "<li><a href='kategori-$k[id_kategori]-$k[kategori_seo].html#read'> $k[nama_kategori] $jmlcat </a></li>";
+   echo "<li><a href='kategori-$k[id_kategori]-$k[kategori_seo].html#read'> ".ucwords(strtolower($k[nama_kategori]))." $jmlcat </a></li>";
    $no++;
    }
    if($w_semuakategori==="Y")
    {
-      echo "<li><a href='semua-kategori.html#read'> KOLEKSI PER KATEGORI</a></li>";
+      echo "<li><a href='semua-kategori.html#read'> Produk Per Kategori</a></li>";
    }
    ?>
    </ul>

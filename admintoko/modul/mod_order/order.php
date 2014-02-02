@@ -136,7 +136,7 @@ echo "<tr><td colspan=3 align=right>Total : </td><td>Rp. <b>$total_rp</b></td></
           <tr><td>Pesan</td><td><textarea name='pesan' style='width: 600px; height: 350px;'>Dear Customer		  
 		  <p>Dengan ini kami informasikan bahwa kami telah menerima pembayaran untuk order berikut :<br/>Nomor Order: $r[id_orders] <br/>Atas nama: $r[nama_kustomer]</p>
 		  <p>Dengan ini kami sampaikan pula bahwa order tersebur telah kami kirim ke alamat berikut :<br/>$r[alamat]</p>
-		  <p>Pengiriman dilakukan dengan menggunakan jasa pengiriman pihat ketiga yaitu:<br>Jasa Pengiriman : <br/> Nomor tracking code :&nbsp;</p>
+		  <p>Pengiriman dilakukan dengan menggunakan jasa pengiriman pihak ketiga yaitu:<br>Jasa Pengiriman : <br/> Nomor tracking code :&nbsp;</p>
 		  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
 		  <p>Terima kasih atas kepercayaan Anda berbelanja di $rdari[value1]<br>Kami nantikan belanja Anda berikutnya..</p>
 		  <p>$rdari[value1]</p>

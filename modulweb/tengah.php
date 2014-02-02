@@ -48,9 +48,9 @@ if ($_GET[module]=='store'){
 	  
 	  echo "<div class='clear'>";
 	  }
-	  if($setting_fblike=="Y") {
-	   echo "<fb:like send=\"true\" width=\"600\" show_faces=\"false\"></fb:like>";
-	  }
+	  // if($setting_fblike=="Y") {
+	  //  echo "<fb:like send=\"true\" width=\"600\" show_faces=\"false\"></fb:like>";
+	  // }
 	  if(!empty($setting_nohp2))
 	  {
 	   $nohape2 = " / <span class=\"bold\">$setting_nohp2</span>";
@@ -1644,7 +1644,7 @@ elseif ($_GET[module]=='keranjangbelanja'){
     
     
        echo "<tr class='bariskeranjang' align=center><td><span>$no</td><input type=hidden name=id[$no] value=$r[id_orders_temp]>
-              <td align=center><a href='foto_produk/$r[gambar]' rel='clearbox[gallery=Koleksi Produk]' title='$r[nama_produk]'><img height=50px class='imgcart' src=foto_produk/small/small_$r[gambar]  class='tooltip' title='klik untuk memperbesar gambar'></td>
+              <td align=center><a href='foto_produk/$r[gambar]' rel='clearbox[gallery=Koleksi Produk]' title='$r[nama_produk]'><img height=50px class='imgcart' src='foto_produk/small/small_$r[gambar]'  class='tooltip' title='klik untuk memperbesar gambar'></td>
               <td><a href='produk-$r[id_produk]-$r[produk_seo].html#read'>$r[nama_produk]</a></td>
               <td align='center'> ";
       $sqlstok = mysql_query("SELECT stok FROM produk WHERE id_produk='".$r[id_produk]."'");
