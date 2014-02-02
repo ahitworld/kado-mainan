@@ -132,7 +132,7 @@ echo "<tr><td colspan=3 align=right>Total : </td><td>Rp. <b>$total_rp</b></td></
           <form method=POST action='?module=order&act=kirimemail'>
           <table>
           <tr><td>Kepada</td><td> : <input type=text name='email' size=30 value='$r[email]'></td></tr>
-          <tr><td>Subjek</td><td> : <input type=text name='subjek' size=50 value='Faktur Pembelian di SaharaButik.com'></td></tr>
+          <tr><td>Subjek</td><td> : <input type=text name='subjek' size=50 value='Faktur Pembelian di Kado-Mainan.com'></td></tr>
           <tr><td>Pesan</td><td><textarea name='pesan' style='width: 600px; height: 350px;'>Dear Customer		  
 		  <p>Dengan ini kami informasikan bahwa kami telah menerima pembayaran untuk order berikut :<br/>Nomor Order: $r[id_orders] <br/>Atas nama: $r[nama_kustomer]</p>
 		  <p>Dengan ini kami sampaikan pula bahwa order tersebur telah kami kirim ke alamat berikut :<br/>$r[alamat]</p>

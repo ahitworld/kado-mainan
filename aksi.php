@@ -83,7 +83,7 @@ header('Location:keranjang-belanja.html');
 // Modul isi testimoni
 elseif ($module=='isitestimoni') {
    if (isset($_COOKIE["testimonisahara"])) {
-      echo "<br>Maaf..<br>Anda sudah mengisi testimoni hari ini.<br><br>Anda bisa mengisi testimoni lagi setelah 24 jam.<br><br>Happy shopping @ SaharaButik.com :)<br><br>Klik tombol untuk kembali<br><br><a class='simplebtn' onclick='selesaiTestimoni();'>Kembali</a>";
+      echo "<br>Maaf..<br>Anda sudah mengisi testimoni hari ini.<br><br>Anda bisa mengisi testimoni lagi setelah 24 jam.<br><br>Happy shopping @ Kado-Mainan.com :)<br><br>Klik tombol untuk kembali<br><br><a class='simplebtn' onclick='selesaiTestimoni();'>Kembali</a>";
    }
    else
    {
@@ -116,7 +116,7 @@ elseif ($module=='isitestimoni') {
                                   'B')");
              if($testi)
              {
-               echo "<br>Terima kasih.<br>Testimoni Anda sudah tersimpan di sistem.<br><br>Kami akan melakukan review terlebih dahulu sebelum menampilkan testimoni Anda tersebut.<br><br>Happy shopping @ SaharaButik.com :)<br><br><br>Klik tombol untuk selesai:<br><br><a class='simplebtn' onclick='selesaiTestimoni();'>Selesai</a>";
+               echo "<br>Terima kasih.<br>Testimoni Anda sudah tersimpan di sistem.<br><br>Kami akan melakukan review terlebih dahulu sebelum menampilkan testimoni Anda tersebut.<br><br>Happy shopping @ Kado-Mainan.com :)<br><br><br>Klik tombol untuk selesai:<br><br><a class='simplebtn' onclick='selesaiTestimoni();'>Selesai</a>";
              }
          }
          else

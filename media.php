@@ -488,7 +488,7 @@ if($w_facebook=="Y")
         
         <div class="copyright_network">
          <p>
-           	Copyright © 2012 <a href="#"><?=$setting_alamatsitus?></a> | email: <?=$setting_email?> | Web Development by <a href="http://goji.web.id" target="_blank">gojigeje</a> & <a href="mailto:rizal_fzl@yahoo.com?subject=Dari SaharaButik.com">Rizal Faizal</a>
+           	Copyright © 2012 <a href="#"><?=$setting_alamatsitus?></a> | email: <?=$setting_email?> | Web Development by <a href="http://goji.web.id" target="_blank">gojigeje</a> & <a href="mailto:rizal_fzl@yahoo.com?subject=Dari <?=$setting_namasitus?>">Rizal Faizal</a>
         	</p>
         	<ul class="network">
                 <li><a href="rss.xml"><img src="images/rss.gif" alt="RSS Feed" border="0" height="20px" /></a></li>

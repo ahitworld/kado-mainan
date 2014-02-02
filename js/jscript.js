@@ -262,7 +262,7 @@ function lanjut5() {
 		         $('#langkah6').slideDown(500);
 		         $('#isilangkah6').slideDown(500);
 		         $('.janganLupa').slideDown(500);
-		         $('#tabelCart').replaceWith('<table id="tabelCart" height="100%" width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="80%" valign="center"><b>Order sudah terkirim :)</b><span class="border_cart"></span></td><td width="20%"><img src="images/keranjang.png" width="40"></td></tr><tr><td colspan="2">Silahkan tunggu konfirmasi SMS dari kami..<br><br>Terimakasih telah berbelanja di SaharaButik.com..</td></tr></tbody></table>');
+		         $('#tabelCart').replaceWith('<table id="tabelCart" height="100%" width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="80%" valign="center"><b>Order sudah terkirim :)</b><span class="border_cart"></span></td><td width="20%"><img src="images/keranjang.png" width="40"></td></tr><tr><td colspan="2">Silahkan tunggu konfirmasi SMS dari kami..<br><br>Terimakasih telah berbelanja di Kado-Mainan.com..</td></tr></tbody></table>');
 		         $('#tabelCart').delay(1000).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).delay(500).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).delay(500).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300);
 		         $('#topPanelTotal').replaceWith('<li>Order sudah terkirim</li>');
 		         $('#topPanelGoto').replaceWith('<li>Tunggu SMS konfirmasi</li>');

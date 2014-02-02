@@ -248,7 +248,7 @@ echo "</a>
 
 <!--========== KOLEKSI LAINNYA ==========-->
 <?php if($setting_homekoleksi=="Y") { ?>
-  <h4 class="heading colr">KOLEKSI SAHARA BUTIK</h4>  
+  <h4 class="heading colr">Koleksi <?=$setting_namatoko?></h4>  
   <?php
   $sql=mysql_query("SELECT * FROM (SELECT * FROM produk WHERE diskon=0 ORDER BY stok desc LIMIT $setting_homekoleksi_isi) as a ORDER BY rand() LIMIT $setting_homekoleksi_isi");
   while ($r=mysql_fetch_array($sql)){
@@ -2055,7 +2055,7 @@ if ($_GET['module']=='selesaibelanja'){
 	            <div class="janganLupa" id="infoTambahan" align="center" style="overflow:hidden;">
 	               <h4>Jangan lupa untuk me-LIKE kami di Facebook :)</h4>
 	            <?php
-	            echo "<br><fb:like href=\"www.saharabutik.com\" send=\"true\" width=\"450\" show_faces=\"true\"></fb:like></div>";
+	            echo "<br><fb:like href=\"www.kado-mainan.com\" send=\"true\" width=\"450\" show_faces=\"true\"></fb:like></div>";
 	         }
 	      ?>
 	   </div>
@@ -2269,7 +2269,7 @@ $pesan.="<br /><br />Total : Rp. $total_rp,-
 $subjek="Pemesanan Online Art Furniture";
 
 // Kirim email dalam format HTML
-$dari = "From: pesan@saharabutik.com \n";
+$dari = "From: pesan@kado-mainan.com \n";
 $dari .= "Content-type: text/html \r\n";
 
 // Kirim email ke kustomer
@@ -2277,7 +2277,7 @@ mail($_POST[email],$subjek,$pesan,$dari);
 
 
 // Kirim email ke pengelola toko online
-mail("pesan@saharabutik.com",$subjek,$pesan,$dari);
+mail("pesan@kado-mainan.com",$subjek,$pesan,$dari);
 
 echo "<tr><td colspan=5 align=right>Total : Rp. </td><td align=right><b>$total_rp</b></td></tr>
       <tr><td colspan=5 align=right>Ongkos Kirim untuk Tujuan Kota Anda: Rp. </td><td align=right><b>$ongkoskirim1_rp</b>/Kg</td></tr>      
