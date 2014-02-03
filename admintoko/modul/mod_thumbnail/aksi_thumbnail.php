@@ -8,6 +8,7 @@ $act=$_GET[act];
 
 if ($module=='thumbnail' AND $act=='status'){
   mysql_query("UPDATE setting SET value1='$_POST[aksi]' WHERE tipe='thumbnail'");
+  mysql_query("UPDATE setting SET value1='$_POST[beli]' WHERE tipe='tbbeli'");
   header('location:../../media.php?module='.$module);
 }
 ?>

@@ -32,9 +32,30 @@
             <link rel="stylesheet" href="css/beli.css">
         </head>
         <body>
-          
-        <div class="divnya">
-          Beli Sekarang!
+
+        <div class="divnya center">
+          Order Sekarang! <?php if (!empty($setting_nohp1) || !empty($setting_nohp2)) {
+            echo "via SMS ";
+          } if (!empty($setting_pinbb) || !empty($setting_pinbb2)) {
+            echo "atau BBM!";
+          }?>
+          <br>
+          <p class="ketik">
+          <?php 
+            if (!empty($setting_nohp1)) {
+              echo "<img src='images/tel.gif'> <b>$setting_nohp1</b> ";
+            }
+            if (!empty($setting_nohp2)) {
+              echo " ~ <b>$setting_nohp2</b> ";
+            }
+
+            if (!empty($setting_pinbb)) {
+              echo "&nbsp; <img src='images/bb.png'> <b>$setting_pinbb</b> ";
+            }
+          ?> 
+          <br>
+          <span class="ketiknya">Ketik: ORDER [spasi] KODE/NAMA PRODUK [spasi] NAMA & ALAMAT ANDA</span>
+        </p>
         </div>
 
         <div class="divnya">
@@ -48,7 +69,9 @@
                     <?=$d[nama_produk]?>
                   </p>
                   <p class="harga">
-                    Harga: Rp. <?=$hargadisc?>
+                    Harga: Rp. <?=$hargadisc?> <?php if ($d[diskon]!=0) {
+                      echo "<br><span class='hargadiskon'>Normal: <s>Rp $harga</s></span>";
+                    } ?>
                   </p>
                   <p>
                     <?php 
@@ -84,42 +107,4 @@
 </html>
     <?php
   }
-
-    //  if($d[diskon]!=0)
-    //  {
-    //     $diskonnya ="<div class='s_price'><span class='s_currency s_before'> $d[diskon]% </span></div>";
-    //     $hargadiskoncoret = "<div style='font-size:10px;text-decoration:line-through;' class='table7'>Rp. $harga,-</span></div>";
-    //  }
-    // echo "<h4 id='namaproduknya' class='heading colr'>Detail Produk : <big>$d[nama_produk]</big></h4></div>";
-    //  if($setting_detail_fblike=="Y")
-    //  {
-    //     echo "<fb:like send=\"true\" width=\"600\" show_faces=\"false\"></fb:like>";
-    //  }
-    // echo"<div class='feat_prod_box_details'>";
-    // if ($d[gambar]!='')
-    // {
-    //   echo "<div class='prod_img3'><a href='foto_produk/$d[gambar]' rel='clearbox[gallery=Koleksi Produk]' title='$d[nama_produk]'><img src='foto_produk/medium/medium_$d[gambar]' width=300  class='tooltip' title='klik untuk memperbesar gambar' border='0' rel='clearbox[gallery=Koleksi Produk]' title='$d[nama_produk]'/></a>
-    //   <br>
-    //   ( Klik gambar untuk memperbesar )
-    //   <br>
-    //   <br>
-    //   $hargadiskoncoret
-    //     <div style='font-size:16px;' class='table6'>Rp. $hargadisc,-</span></div>
-    //   $diskonnya
-    //   <br>
-    //   </div>";
-    //  }
-    // echo"<div class='details_big_box'>
-    //           <div class='product_title_big'>Deskripsi Produk</div>
-    //           <div class='details'>$d[deskripsi]</div><br />
-    //           <div class='table6'>&bull; HARGA: <span class='table7'>Rp. $hargadisc,-</span></div>
-    //           <div class='table6'>&bull; STOK:<span class='table7'> $d[stok] item</span></div><br />";
-    //  if($d[stok]!=0)
-    //  {
-    //     echo "<a href='aksi.php?module=keranjang&act=tambah&id=$d[id_produk]' class='more'><img src='images/belibutton_$setting_tema.png' alt='' width='170px' title='' border='0' /></a>";
-    //  }
-    //  else
-    //  {
-    //     echo "<img src='images/habisbutton_$setting_tema.png' alt='' width='170px' title='' border='0' />";
-    //  }
 ?>

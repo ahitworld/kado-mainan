@@ -16,7 +16,7 @@
   include "config/hapus_orderfiktif.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:fb="http://ogp.me/ns/fb#">
+<!-- <html xmlns:fb="http://ogp.me/ns/fb#"> -->
 <head>
 <title><?php include "config/seo_title.php"; ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -63,12 +63,6 @@
 <script type="text/javascript" src="js/jquery.easing.1.2.js"></script>
 <script type="text/javascript" src="js/easy.js"></script>
 <script type="text/javascript" src="js/jscript.js"></script>
-<!--"js/jquery.fancybox-1.3.1.js"-->
-<!--src="js/lightbox.js"-->
-<!--src="js/jquery.min14.js" -->
-<!--src="js/jquery-ui.min.js" -->
-<!--src="js/jquery.ad-gallery.js"-->
-<!--src="js/contentslider.js"-->
 <!--[if lte IE 7]>
 <script type="text/javascript" src="js/jquery.dropdown.js"></script>
 <![endif]-->
@@ -199,14 +193,16 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/id_ID/all.js#xfbml=1&appId=140831729365765";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<!-- <div id="fb-root"></div> -->
+<script>
+// (function(d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s); js.id = id;
+//   js.src = "//connect.facebook.net/id_ID/all.js#xfbml=1&appId=140831729365765";
+//   fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
+</script>
 <a name="top"></a>
 <div id="wrapper_sec">
 	<div id="head">
@@ -617,7 +613,11 @@ if($w_facebook=="Y")
          }
       }
    }
+
+   if ($setting_fblike=="Y") {
+     echo "<script type='text/javascript' src='js/fb.comment.js'></script>";
+   }
 ?>
-<script type="text/javascript" src="js/fb.comment.js"></script>
+
 </body>
 </html>

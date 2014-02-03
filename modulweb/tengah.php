@@ -82,7 +82,11 @@ if ($_GET[module]=='store'){
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -168,7 +172,11 @@ echo "SELECT * FROM produk WHERE featured='Y' ORDER BY rand() DESC LIMIT $settin
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -256,8 +264,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    // $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
-    $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=420]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -349,7 +360,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -520,7 +535,11 @@ elseif ($_GET[module]=='detailproduk'){
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -606,7 +625,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -692,7 +715,11 @@ echo "<!--========== AKHIR ON SALE DISKON ==========-->";
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -788,7 +815,11 @@ elseif ($_GET[module]=='detailkategori'){
        $disc     = ($r[diskon]/100)*$r[harga];
        $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
        $stok=$r['stok'];
-       $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+       if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
        $tombolhabis="<span class='prod_cart_habis'></span>";
          if ($stok!= "0"){
          $tombol=$tombolbeli;
@@ -871,7 +902,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -971,7 +1006,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -1242,7 +1281,11 @@ elseif ($_GET[module]=='semuaproduk'){
        $disc     = ($r[diskon]/100)*$r[harga];
        $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
        $stok=$r['stok'];
-       $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+       if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
        $tombolhabis="<span class='prod_cart_habis'></span>";
          if ($stok!= "0"){
          $tombol=$tombolbeli;
@@ -1329,7 +1372,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -1427,7 +1474,11 @@ echo "</a>
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -1528,7 +1579,11 @@ elseif ($_GET[module]=='featured'){
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -2313,7 +2368,11 @@ elseif ($_GET[module]=='semuakategori'){
        $disc     = ($r[diskon]/100)*$r[harga];
        $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
        $stok=$r['stok'];
-       $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+       if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
        $tombolhabis="<span class='prod_cart_habis'></span>";
          if ($stok!= "0"){
          $tombol=$tombolbeli;
@@ -2402,7 +2461,11 @@ elseif ($_GET[module]=='semuakategori'){
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;
@@ -2512,7 +2575,11 @@ elseif ($_GET[module]=='onsale'){
     $disc     = ($r[diskon]/100)*$r[harga];
     $hargadisc     = number_format(($r[harga]-$disc),0,",",".");
     $stok=$r['stok'];
-    $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    if ($setting_tbbeli=="popup") {
+      $tombolbeli="<a title=\"beli\" class='prod_cart' href=\"beli-$r[id_produk]\" rel=\"clearbox[width=420,,height=360]\">BELI</a>";
+    } elseif ($setting_tbbeli=="cart") {
+      $tombolbeli="<a class='prod_cart' href=\"aksi.php?module=keranjang&act=tambah&id=$r[id_produk]\">BELI</a>";
+    }
     $tombolhabis="<span class='prod_cart_habis'></span>";
       if ($stok!= "0"){
       $tombol=$tombolbeli;

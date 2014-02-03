@@ -3,7 +3,9 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
-
+.center {
+  text-align: center;
+}
 .divnya {
   width: 375px;
   border: dotted 3px #AE595E;
@@ -33,12 +35,26 @@ body {
   color: #892d33;
   margin-bottom: 5px;
 }
+.divnya .hargadiskon {
+  font-size: 10px;
+  color: #000;
+  font-weight: normal;
+}
 .divnya p {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 13px;
   margin-top: 0;
 }
-
+.divnya .ketik {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 25px;
+}
+.divnya .ketiknya {
+  font-size: 12px;
+}
 .divnya .btlink {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #fff;
