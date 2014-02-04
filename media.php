@@ -375,21 +375,11 @@ if($w_facebook=="Y")
         	<h5>Chat Box</h5>
 <!-- BEGIN CBOX - www.cbox.ws - v001 -->
 <div id="cboxdiv" style="text-align: center; line-height: 0">
-<div><iframe frameborder="0" width="180" height="180" src="http://www5.cbox.ws/box/?boxid=757365&amp;boxtag=r4l1wp&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain5-757365" style="border:#ababab 1px solid;" id="cboxmain5-757365"></iframe></div>
-<div><iframe frameborder="0" width="180" height="90" src="http://www5.cbox.ws/box/?boxid=757365&amp;boxtag=r4l1wp&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform5-757365" style="border:#ababab 1px solid;border-top:0px" id="cboxform5-757365"></iframe></div>
+<div><iframe frameborder="0" width="180" height="180" src="http://www5.cbox.ws/box/?boxid=838345&amp;boxtag=cvx0wn&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain5-838345" style="border:#EDDEDB 1px solid;" id="cboxmain5-838345"></iframe></div>
+<div><iframe frameborder="0" width="180" height="90" src="http://www5.cbox.ws/box/?boxid=838345&amp;boxtag=cvx0wn&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform5-838345" style="border:#EDDEDB 1px solid;border-top:0px" id="cboxform5-838345"></iframe></div>
 </div>
-<br/>
+<br>
 <!-- END CBOX -->
-        	<!--<ul>
-            	<li>
-            	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td><?php //include "widget/polling.php" ?></td>
-                    </tr>
-                  </table>
-            	</li>
-            	<li></li>
-            </ul>-->
         </div>
 <!--========== /CHAT ==========-->
 

@@ -12,4 +12,3 @@
       <li><a href='?module=widget'><b>Pengaturan WIDGET</b></a></li>
 	</ul>
 </li>
-
