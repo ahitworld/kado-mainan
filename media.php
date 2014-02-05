@@ -160,10 +160,20 @@
 </style>
 <?php
    if($setting_background_tipe=="warna") {
+      // echo "
+      //    <style type='text/css'>
+      //       body {
+      //          background-color: #$setting_background_value;
+      //       }
+      //    </style>
+      // ";
       echo "
          <style type='text/css'>
             body {
-               background-color: #$setting_background_value;
+               background-image: url(images/pattern1.jpg) repeat;
+            }
+            #wrapper_sec {
+              background: #831E42;
             }
          </style>
       ";
