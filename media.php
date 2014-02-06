@@ -170,7 +170,8 @@
       echo "
          <style type='text/css'>
             body {
-               background-image: url(images/pattern1.jpg) repeat;
+               background-image: url(images/pattern1.jpg);
+               background-repeat: repeat;
             }
             #wrapper_sec {
               background: #831E42;
