@@ -22,7 +22,12 @@ switch($_GET[act]){
     $tampil = mysql_query("SELECT * FROM orders ORDER BY id_orders DESC LIMIT $posisi,$batas");
     $no=0;
     while($r=mysql_fetch_array($tampil)){
-      $tanggal=tgl_indo($r[tgl_order]);	  
+      $tanggal=tgl_indo($r[tgl_order]);
+      if ($r[status_order]=="Baru") {
+        $alert = "Order ini statusnya BARU\\nTetap hapus order ini?\\nAksi tidak akan dapat dikembalikan..!!";
+      } else {
+        $alert = "Hapus order ini?\\nAksi tidak akan dapat dikembalikan..!!";
+      }
       echo "<tr><td><input type=checkbox name=cek[] value=$r[id_orders] id=id$no></td>
 	            <td ><a href=?module=order&act=detailorder&id=$r[id_orders]>$r[id_orders]</a</td>
                 <td><a href=?module=order&act=detailorder&id=$r[id_orders]>$r[nama_kustomer]</a></td>
@@ -30,7 +35,7 @@ switch($_GET[act]){
                 <td><a href=?module=order&act=detailorder&id=$r[id_orders]>$r[jam_order]</a></td>
                 <td><a href=?module=order&act=detailorder&id=$r[id_orders]>$r[status_order]</a></td>
 		            <td><a href=?module=order&act=detailorder&id=$r[id_orders]><b>Baca</b></a> | 
-		                <a href=$aksi?module=order&act=hapus&id=$r[id_orders] onclick='return confirm(\"Hapus order ini?\\nAksi tidak akan dapat dikembalikan..!!\");'><b>Hapus</b></a></td></tr>";
+		                <a href=$aksi?module=order&act=hapus&id=$r[id_orders] onclick='return confirm(\"$alert\");'><b>Hapus</b></a></td></tr>";
       $no++;
     }
 	           
@@ -135,7 +140,7 @@ echo "<tr><td colspan=3 align=right>Total : </td><td>Rp. <b>$total_rp</b></td></
           <tr><td>Subjek</td><td> : <input type=text name='subjek' size=50 value='Faktur Pembelian di Kado-Mainan.com'></td></tr>
           <tr><td>Pesan</td><td><textarea name='pesan' style='width: 600px; height: 350px;'>Dear Customer		  
 		  <p>Dengan ini kami informasikan bahwa kami telah menerima pembayaran untuk order berikut :<br/>Nomor Order: $r[id_orders] <br/>Atas nama: $r[nama_kustomer]</p>
-		  <p>Dengan ini kami sampaikan pula bahwa order tersebur telah kami kirim ke alamat berikut :<br/>$r[alamat]</p>
+		  <p>Kami sampaikan pula bahwa order tersebur telah kami kirim ke alamat berikut :<br/>$r[alamat]</p>
 		  <p>Pengiriman dilakukan dengan menggunakan jasa pengiriman pihak ketiga yaitu:<br>Jasa Pengiriman : <br/> Nomor tracking code :&nbsp;</p>
 		  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
 		  <p>Terima kasih atas kepercayaan Anda berbelanja di $rdari[value1]<br>Kami nantikan belanja Anda berikutnya..</p>
